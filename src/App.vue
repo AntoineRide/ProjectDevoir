@@ -4,7 +4,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
     <div style="text-align: center;">
-        <img alt="Turtle logo" class="logo" src="https://12ax7web.s3.amazonaws.com/accounts/1/storefronts/1/tt-logo-main.svg" width="300" height="100" />
+        <img alt="Turtle logo" class="logo" src="https://12ax7web.s3.amazonaws.com/accounts/1/storefronts/1/tt-logo-main.svg" href="" width="300" height="100" />
         <div class="wrapper">
 
           <nav v-if="$route.name != 'tee_shirts'" style="text-align: center;">
