@@ -4,12 +4,15 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
     <div style="text-align: center;">
-        <img alt="Turtle logo" class="logo" src="https://12ax7web.s3.amazonaws.com/accounts/1/storefronts/1/tt-logo-main.svg" width="300" height="300" />
+        <img alt="Turtle logo" class="logo" src="https://12ax7web.s3.amazonaws.com/accounts/1/storefronts/1/tt-logo-main.svg" width="300" height="100" />
+        <div class="wrapper">
+
+          <nav v-if="$route.name != 'tee_shirts'" style="text-align: center;">
+            <RouterLink to="/">Accueil</RouterLink>
+            <RouterLink to="/tee_shirts/0">Boutique</RouterLink>
+          </nav>
+        </div>
     <div>
-      
-      <nav v-if="$route.name != 'tee_shirts'" style="text-align: center;">
-        <RouterLink to="/tee_shirts/0">Voir la liste des tee-shirts</RouterLink>
-      </nav>
     </div>
     </div>
     <RouterView />
